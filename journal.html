@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .journal-details {
+            margin-bottom: 20px;
+        }
+        .journal-details label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .journal-details input[type="text"] {
+            width: calc(100% - 10px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .journal-details .error {
+            color: #dc3545;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+        #toggleAuthors {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: #fff;
+        }
+        #toggleAuthors:hover {
+            background-color: #218838;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Journal Details</h1>
+        <form id="journalForm">
+            <div class="journal-details">
+                <label for="issn">ISSN:</label>
+                <input type="text" id="issn" name="issn" placeholder="Enter ISSN" required>
+                <span id="issnError" class="error"></span>
+                
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter title" required>
+                <span id="titleError" class="error"></span>
+                
+                <label for="type">Type:</label>
+                <input type="text" id="type" name="type" placeholder="Enter type" required>
+                <span id="typeError" class="error"></span>
+                
+                <label for="journalName">Journal Name:</label>
+                <input type="text" id="journalName" name="journalName" placeholder="Enter journal name" required>
+                <span id="journalNameError" class="error"></span>
+                
+                <label for="authors">Authors:</label>
+                <input type="text" id="authors" name="authors" placeholder="Enter authors" required>
+                <span id="authorsError" class="error"></span>
+                
+                <label for="year">Year:</label>
+                <input type="text" id="year" name="year" placeholder="Enter year" required>
+                <span id="yearError" class="error"></span>
+                
+                <label for="index">Index:</label>
+                <input type="text" id="index" name="index" placeholder="Enter index" required>
+                <span id="indexError" class="error"></span>
+                
+                <label for="author2">Author 2:</label>
+                <input type="text" id="author2" name="author2" placeholder="Enter author 2">
+                
+                <label for="author3">Author 3:</label>
+                <input type="text" id="author3" name="author3" placeholder="Enter author 3">
+                
+                <label for="author4">Author 4:</label>
+                <input type="text" id="author4" name="author4" placeholder="Enter author 4">
+                
+                <label for="author5">Author 5:</label>
+                <input type="text" id="author5" name="author5" placeholder="Enter author 5">
+                
+                <label for="impactFactor">Impact Factor:</label>
+                <input type="text" id="impactFactor" name="impactFactor" placeholder="Enter impact factor">
+            </div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        
+        <button id="toggleAuthors">Toggle Authors</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        // Toggle authors
+        document.getElementById("toggleAuthors").addEventListener("click", function () {
+            var authors = document.getElementById("authors");
+            authors.style.display = authors.style.display === "none" ? "block" : "none";
+        });
+
+        // Form validation
+        document.getElementById("journalForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            // Validate form inputs
+            var isValid = validateForm();
+            if (!isValid) {
+                return;
+            }
+
+            // Create FormData object to collect form data
+            var formData = new FormData(this);
+
+            // Create XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+
+            // Define AJAX request parameters
+            xhr.open("POST", "http://localhost/JOURNAL.php", true); 
+
+            // Define AJAX response handling
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        var response = xhr.responseText;
+            try {
+                var debugData = JSON.parse(response);
+                
+                // Log debug data to console
+                console.log("Debug Data:", debugData);
+                
+                // Success: Display response message
+                document.getElementById("result").innerHTML = response;
+            } catch (error) {
+                console.error("Error parsing JSON:", error);
+            }
+                    
+                        // Success: Display response message
+                        document.getElementById("result").innerHTML = xhr.responseText;
+                    } else {
+                        // Error: Display error message
+                        document.getElementById("result").innerHTML = "An error occurred. Please try again later.";
+                    }
+                }
+            };
+
+            // Send AJAX request with form data
+            xhr.send(formData);
+        });
+        window.addEventListener("load", function () {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "http://localhost/journal.php", true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                // Log the raw response to inspect it
+                console.log("Raw Response:", xhr.responseText);
+
+                // Attempt to parse the response as JSON
+                try {
+                    var responseData = JSON.parse(xhr.responseText);
+                    console.log("Journal Data:", responseData);
+                } catch (error) {
+                    console.error("Error parsing JSON:", error);
+                }
+            } else {
+                console.error("Error:", xhr.status);
+            }
+        }
+    };
+    xhr.send();
+});
+
+        function validateForm() {
+            // Your form validation logic here
+            return true; // Return true if validation passes, false otherwise
+        }
+    </script>
+</body>
+</html>

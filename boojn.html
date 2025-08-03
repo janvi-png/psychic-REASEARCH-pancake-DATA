@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Chapter Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fbb3b3;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f7e7e7;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .book-chapter-details {
+            margin-bottom: 20px;
+        }
+        .book-chapter-details label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .book-chapter-details input[type="text"] {
+            width: calc(100% - 10px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .book-chapter-details .error {
+            color: #dc3545;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Book Chapter Details</h1>
+        <form id="bookChapterForm">
+            <div class="book-chapter-details">
+                <label for="issb">ISSB:</label>
+                <input type="text" id="issb" name="issb" placeholder="Enter ISSB" required>
+                <span id="issbError" class="error"></span>
+                
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter title" required>
+                <span id="titleError" class="error"></span>
+                
+                <label for="volume">Volume:</label>
+                <input type="text" id="volume" name="volume" placeholder="Enter volume" required>
+                <span id="volumeError" class="error"></span>
+                
+                <label for="pageNo">Page No:</label>
+                <input type="text" id="pageNo" name="pageNo" placeholder="Enter page numbers" required>
+                <span id="pageNoError" class="error"></span>
+                
+                <label for="natureOfIndex">Nature of Index:</label>
+                <input type="text" id="natureOfIndex" name="natureOfIndex" placeholder="Enter nature of index" required>
+                <span id="natureOfIndexError" class="error"></span>
+                
+                <label for="year">Year:</label>
+                <input type="text" id="year" name="year" placeholder="Enter year" required>
+                <span id="yearError" class="error"></span>
+            </div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+            document.getElementById("bookChapterForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+            var formData = new FormData(this);
+
+            // Send form data using AJAX
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost/save_booK.php");  
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        document.getElementById("result").innerHTML = xhr.responseText;
+                    } else {
+                        console.error('There was a problem with the request.');
+                    }
+                }
+            };
+            xhr.send(formData);
+        });
+        window.addEventListener("load", function () {
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "http://localhost/save_booK.php", true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                // Log the raw response to inspect it
+                console.log("Raw Response:", xhr.responseText);
+
+                // Attempt to parse the response as JSON
+                try {
+                    var responseData = JSON.parse(xhr.responseText);
+                    console.log("Journal Data:", responseData);
+                } catch (error) {
+                    console.error("Error parsing JSON:", error);
+                }
+            } else {
+                console.error("Error:", xhr.status);
+            }
+        }
+    };
+    xhr.send();
+});
+      
+            // Validate ISSB
+            var issbInput = document.getElementById("issb");
+            var issbError = document.getElementById("issbError");
+            if (!issbInput.value.trim()) {
+                errors.push("Please enter ISSB.");
+                isValid = false;
+            } else {
+                issbError.textContent = "";
+            }
+
+            // Validate Title
+            var titleInput = document.getElementById("title");
+            var titleError = document.getElementById("titleError");
+            if (!titleInput.value.trim()) {
+                errors.push("Please enter title.");
+                isValid = false;
+            } else {
+                titleError.textContent = "";
+            }
+
+            // Validate Volume
+            var volumeInput = document.getElementById("volume");
+            var volumeError = document.getElementById("volumeError");
+            if (!volumeInput.value.trim()) {
+                errors.push("Please enter volume.");
+                isValid = false;
+            } else {
+                volumeError.textContent = "";
+            }
+
+            // Validate Page No
+            var pageNoInput = document.getElementById("pageNo");
+            var pageNoError = document.getElementById("pageNoError");
+            if (!pageNoInput.value.trim()) {
+                errors.push("Please enter page numbers.");
+                isValid = false;
+            } else {
+                pageNoError.textContent = "";
+            }
+
+            // Validate Nature of Index
+            var natureOfIndexInput = document.getElementById("natureOfIndex");
+            var natureOfIndexError = document.getElementById("natureOfIndexError");
+            if (!natureOfIndexInput.value.trim()) {
+                errors.push("Please enter nature of index.");
+                isValid = false;
+            } else {
+                natureOfIndexError.textContent = "";
+            }
+
+            // Validate Year
+            var yearInput = document.getElementById("year");
+            var yearError = document.getElementById("yearError");
+            if (!yearInput.value.trim()) {
+                errors.push("Please enter year.");
+                isValid = false;
+            } else {
+                yearError.textContent = "";
+            }
+
+            // Display errors
+            if (!isValid) {
+                event.preventDefault(); // Prevent form submission
+                var errorString = errors.join("<br>");
+                document.getElementById("result").innerHTML = "<div class='error'>" + errorString + "</div>";
+                console.log();
+            };
+    </script>
+</body>
+</html>

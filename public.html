@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publication Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .publication-details {
+            margin-bottom: 20px;
+        }
+        .publication-details label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .publication-details input[type="text"] {
+            width: calc(100% - 10px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .publication-details .error {
+            color: #dc3545;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Publication Details</h1>
+        <form id="publicationForm">
+            <div class="publication-details">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter title" required>
+                <span id="titleError" class="error"></span>
+                
+                <label for="type">Type:</label>
+                <input type="text" id="type" name="type" placeholder="Enter type" required>
+                <span id="typeError" class="error"></span>
+                
+                <label for="publisher">Publisher:</label>
+                <input type="text" id="publisher" name="publisher" placeholder="Enter publisher" required>
+                <span id="publisherError" class="error"></span>
+                
+                <label for="year">Year:</label>
+                <input type="text" id="year" name="year" placeholder="Enter year" required>
+                <span id="yearError" class="error"></span>
+                
+                <label for="issn">ISSN:</label>
+                <input type="text" id="issn" name="issn" placeholder="Enter ISSN" required>
+                <span id="issnError" class="error"></span>
+                
+                <label for="doi">DOI:</label>
+                <input type="text" id="doi" name="doi" placeholder="Enter DOI">
+                
+                <label for="isbn">ISBN:</label>
+                <input type="text" id="isbn" name="isbn" placeholder="Enter ISBN">
+                
+                <label for="author1">Author 1:</label>
+                <input type="text" id="author1" name="author1" placeholder="Enter author 1" required>
+                
+                <label for="author2">Author 2:</label>
+                <input type="text" id="author2" name="author2" placeholder="Enter author 2">
+                
+                <label for="author3">Author 3:</label>
+                <input type="text" id="author3" name="author3" placeholder="Enter author 3">
+                
+                <label for="author4">Author 4:</label>
+                <input type="text" id="author4" name="author4" placeholder="Enter author 4">
+                
+                <label for="author5">Author 5:</label>
+                <input type="text" id="author5" name="author5" placeholder="Enter author 5">
+                
+                <label for="index">Index:</label>
+                <input type="text" id="index" name="index" placeholder="Enter index">
+                
+                <label for="volume">Volume:</label>
+                <input type="text" id="volume" name="volume" placeholder="Enter volume">
+                
+                <label for="issue">Issue:</label>
+                <input type="text" id="issue" name="issue" placeholder="Enter issue">
+                
+                <label for="pageNo">Page No:</label>
+                <input type="text" id="pageNo" name="pageNo" placeholder="Enter page numbers">
+            </div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        
+        <div id="result"></div>
+    </div>
+
+    <script>
+        document.getElementById("publicationForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent default form submission
+            
+            // Create FormData object to collect form data
+            var formData = new FormData(this);
+
+            // Create XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+
+            // Define AJAX request parameters
+            xhr.open("POST", "http://localhost/PUBLIC.php", true);
+
+            // Define AJAX response handling
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        // Success: Display response message
+                        document.getElementById("result").innerHTML = xhr.responseText;
+                    } else {
+                        // Error: Display error message
+                        document.getElementById("result").innerHTML = "An error occurred. Please try again later.";
+                    }
+                }
+            };
+// Fetch data via AJAX when the page loads
+var fetchDataXHR = new XMLHttpRequest();
+        fetchDataXHR.open("GET", "http://localhost/PUBLIC.php", true);
+        fetchDataXHR.onreadystatechange = function() {
+            if (fetchDataXHR.readyState === XMLHttpRequest.DONE) {
+                if (fetchDataXHR.status === 200) {
+                    // Request successful, process response 
+                    // Log the raw response to inspect it
+                console.log("Raw Response:", xhr.responseText);
+                    var responseData = fetchDataXHR.responseText;
+                    console.log("Response:", responseData);
+                    // Display fetched data in the result div
+                    document.getElementById("result").innerHTML = responseData;
+                } else {
+                    // Request failed
+                    console.error("Error:", fetchDataXHR.status);
+                }
+            }
+        };
+        fetchDataXHR.send();
+            // Send AJAX request with form data
+            xhr.send(formData);
+        });
+    </script>
+</body>
+</html>

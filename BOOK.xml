@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <BOOK_CHAPTER>
+        <ISSB>978-981-10-5546-1</ISSB>
+        <TITLE>Smart Innovation, Systems and Technologies book series</TITLE>
+        <VOLUME>78</VOLUME>
+        <PAGE_NO>623-635</PAGE_NO>
+        <NATURE_OF_INDEX>SIST</NATURE_OF_INDEX>
+        <YEAR>2018</YEAR>
+    </BOOK_CHAPTER>
+    <BOOK_CHAPTER>
+        <ISSB>978-981-10-5546-1</ISSB>
+        <TITLE>Smart Innovation, Systems and Technologies book series</TITLE>
+        <VOLUME>78</VOLUME>
+        <PAGE_NO>413-423</PAGE_NO>
+        <NATURE_OF_INDEX>SIST</NATURE_OF_INDEX>
+        <YEAR>2018</YEAR>
+    </BOOK_CHAPTER>
+    <BOOK_CHAPTER>
+        <ISSB>978-981-10-7244-4</ISSB>
+        <TITLE>Intelligent Computing and Information and Communication. Advances in Intelligent
+            Systems and Computing</TITLE>
+        <VOLUME>673</VOLUME>
+        <PAGE_NO>731-744</PAGE_NO>
+        <NATURE_OF_INDEX>Springer, Singapore</NATURE_OF_INDEX>
+        <YEAR>2018</YEAR>
+    </BOOK_CHAPTER>
+</root>

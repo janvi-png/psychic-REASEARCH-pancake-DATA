@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <CONFERENCE>
+        <Title>Detection of Motorcyclists without Helmet in Videos using Convolutional Neural
+            Network</Title>
+        <TYPE>CONFERENCE</TYPE>
+        <conference_name>2017 International joint conference on neural networks (IJCNN)</conference_name>
+        <year>2017</year>
+        <ISSN_NO />
+        <PLACE_OF_CONFERENCE>Anchorage, AK, USA</PLACE_OF_CONFERENCE>
+        <DOC>14-19 May 2017</DOC>
+        <DOI>10.1109/IJCNN.2017.7966233</DOI>
+        <ISBN_NO>978-1-5090-6183-9</ISBN_NO>
+        <DOP />
+        <AUTHOR_1>c. VISHNU</AUTHOR_1>
+        <AUTHOR_2>DINESH SINGH</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <NatureofIndex />
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+    </CONFERENCE>
+    <CONFERENCE>
+        <Title>Particle Swarm Optimization based Dynamic Load Balancing in Cloud Environment</Title>
+        <TYPE>CONFERENCE</TYPE>
+        <conference_name>in Proceedings of the IEEE Conference: INDIACom-2017 4th International
+            Conference on “Computing for Sustainable Global Development held at BVICAM, New Delhi
+            (INDIA), March 1st - 3rd , 2017</conference_name>
+        <year>2017</year>
+        <ISSN_NO>0973-7529</ISSN_NO>
+        <PLACE_OF_CONFERENCE />
+        <DOC />
+        <DOI />
+        <ISBN_NO>978-93-80544-24-3</ISBN_NO>
+        <DOP />
+        <AUTHOR_1>Amanpreet Kaur</AUTHOR_1>
+        <AUTHOR_2>Dr. Bikrampal Kaur</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <NatureofIndex>SCI</NatureofIndex>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+    </CONFERENCE>
+    <CONFERENCE>
+        <Title>Comparative Analysis of Metaheuristics based Load Balancing Optimization in Cloud
+            Environment</Title>
+        <TYPE>CONFERENCE</TYPE>
+        <conference_name>in Proceedings of 3rd International Conference on "Smart and Innovative
+            Trends in Next Generation Computing Technologies (NGCT 2017)", held at UPES, Dehradun,
+            October 30-31st , 2017.</conference_name>
+        <year>2017</year>
+        <ISSN_NO>1865-0929</ISSN_NO>
+        <PLACE_OF_CONFERENCE>DEHRADUN,INDIA</PLACE_OF_CONFERENCE>
+        <DOC>30-31 OCT,2017</DOC>
+        <DOI />
+        <ISBN_NO />
+        <DOP>43260</DOP>
+        <AUTHOR_1>Amanpreet Kaur</AUTHOR_1>
+        <AUTHOR_2>Dr. Bikrampal Kaur</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <NatureofIndex>SPRINGER</NatureofIndex>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+    </CONFERENCE>
+    <CONFERENCE>
+        <Title>QoWS Analysis for Web Service Selection Using WS Monitoring Tool</Title>
+        <TYPE>CONFERENCE</TYPE>
+        <conference_name>Computational Intelligence and Networks (CINE), 2017 3rd International
+            Conference</conference_name>
+        <year>2017</year>
+        <ISSN_NO />
+        <PLACE_OF_CONFERENCE>ODISHA</PLACE_OF_CONFERENCE>
+        <DOC>28-28 October 2017</DOC>
+        <DOI>10.1109/CINE.2017.15</DOI>
+        <ISBN_NO>978-1-5386-2530-9</ISBN_NO>
+        <DOP />
+        <AUTHOR_1>GAURAV RAJ</AUTHOR_1>
+        <AUTHOR_2>TRIVENI MISHRA</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <NatureofIndex>IEEE</NatureofIndex>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+    </CONFERENCE>
+    <CONFERENCE>
+        <Title>Comparative analysis of metaheuristics based Load Balancing Optimization in Cloud
+            Environment</Title>
+        <TYPE>CONFERENCE</TYPE>
+        <conference_name>International Conference on Next Generation Computing Technologies</conference_name>
+        <year>2018</year>
+        <ISSN_NO>1865-0929</ISSN_NO>
+        <PLACE_OF_CONFERENCE />
+        <DOC>43260</DOC>
+        <DOI />
+        <ISBN_NO />
+        <DOP />
+        <AUTHOR_1>Amanpreet Kaur</AUTHOR_1>
+        <AUTHOR_2>Dr. Bikrampal Kaur</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <NatureofIndex>Springer</NatureofIndex>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+    </CONFERENCE>
+    <CONFERENCE>
+        <Title>A Hybrid Approach for Cloud Load Balancing</Title>
+        <TYPE>CONFERENCE</TYPE>
+        <conference_name>2022 2nd International Conference on Advance Computing and Innovative
+            Technologies in Engineering (ICACITE)</conference_name>
+        <year>2021</year>
+        <ISSN_NO />
+        <PLACE_OF_CONFERENCE>Greater Noida, India</PLACE_OF_CONFERENCE>
+        <DOC>28-29 April 2022</DOC>
+        <DOI>10.1109/ICACITE53722.2022.9823569</DOI>
+        <ISBN_NO />
+        <DOP>44760</DOP>
+        <AUTHOR_1>SUMAN LATA</AUTHOR_1>
+        <AUTHOR_2>Dr. Dheerendra Singh</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <NatureofIndex>Scopus</NatureofIndex>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+    </CONFERENCE>
+    <CONFERENCE>
+        <Title>Optimizing Packets of Software Defined Network Using Hybrid Optimization Techniques</Title>
+        <TYPE>CONFERENCE</TYPE>
+        <conference_name>IEEE</conference_name>
+        <year>2021</year>
+        <ISSN_NO />
+        <PLACE_OF_CONFERENCE>Gautam Buddha Nagar, India</PLACE_OF_CONFERENCE>
+        <DOC>23-25 February 2022</DOC>
+        <DOI>10.1109/ICIPTM54933.2022.9754133</DOI>
+        <ISBN_NO>978-1-6654-6644-8</ISBN_NO>
+        <DOP>44669</DOP>
+        <AUTHOR_1>JAGMEET KAUR</AUTHOR_1>
+        <AUTHOR_2>Dr. Dheerendra Singh</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <NatureofIndex>Scopus</NatureofIndex>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+    </CONFERENCE>
+    <CONFERENCE>
+        <Title>Cloud simulation tools: A survey</Title>
+        <TYPE>CONFERENCE</TYPE>
+        <conference_name>INNOVATIONS IN COMPUTATIONAL AND COMPUTER TECHNIQUES:
+            ICACCT-2021
+            30–31 October 2021 Mohali, India</conference_name>
+        <year>2022</year>
+        <ISSN_NO />
+        <PLACE_OF_CONFERENCE>MOHALI</PLACE_OF_CONFERENCE>
+        <DOC>44835</DOC>
+        <DOI>https://doi.org/10.1063/5.0109181</DOI>
+        <ISBN_NO />
+        <DOP>44855</DOP>
+        <AUTHOR_1>SUMAN LATA</AUTHOR_1>
+        <AUTHOR_2>Dr. Dheerendra Singh</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <NatureofIndex>SCOPUS</NatureofIndex>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+    </CONFERENCE>
+</root>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 40px;
+        }
+
+        .container {
+            max-width: 8000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        #searchResults {
+            overflow-x: auto;
+        }
+
+        .action-button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .action-button:hover {
+            background-color: #218838;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .no-results {
+            text-align: center;
+            margin-top: 20px;
+            color: #ff0000;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="boojn.html">BooK Chapter</a>
+        <a href="author.html">Author details</a>
+        <a href="conference.html">Conference</a>
+        <a href="journal.html">Journal</a>
+        <a href="paperdetails.html">Paper Details</a>
+        <a href="public.html">Publication </a>
+        <a href="YEAR.html">SEARCHBYYEAR</a>
+
+    </nav>
+    <div class="container">
+        <!-- Buttons for actions -->
+        <button class="action-button" onclick="setCookie()">set Cookie </button>
+        <button class="action-button" onclick="getSessionData()">sessionData</button>
+    <div class="container">
+        <h2>Search</h2>
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Enter search query">
+            <input type="radio" name="table" value="all" checked> All
+            <input type="radio" name="table" value="author_detail"> Author Detail
+            <input type="radio" name="table" value="book_chapter"> Book Chapter
+            <input type="radio" name="table" value="conference"> Conference
+            <input type="radio" name="table" value="journal"> Journal
+            <input type="radio" name="table" value="paper_detail"> Paper Details
+            <input type="radio" name="table" value="publication"> Publication
+            <input type="submit" value="Search">
+        </form>
+        <div id="searchResults"></div>
+    </div>
+
+
+    <div class="container">
+        <!-- Buttons for actions -->
+        <button class="action-button" onclick="createData()">Create Data</button>
+        <button class="action-button" onclick="deleteData()">Delete Data</button>
+        <button class="action-button" onclick="editData()">Edit Data</button>
+        <div id="searchResultsWithinTables"></div>
+    </div>
+
+    <div class="container">
+        <div id="dataContainer"></div>
+    </div>
+
+    <script>
+        document.getElementById("searchForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var searchTerm = document.getElementById("searchInput").value.trim();
+            if (searchTerm !== "") {
+                fetchSearchResults(searchTerm);
+            }
+        });
+
+        function fetchSearchResults(searchTerm) {
+            var table = document.querySelector('input[name="table"]:checked').value;
+            var url = "http://localhost/fetch_data.php?search=" + encodeURIComponent(searchTerm) + "&table=" + table;
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        try {
+                            var responseData = JSON.parse(xhr.responseText);
+                            displaySearchResults(responseData);
+                        } catch (error) {
+                            console.error("Error parsing JSON:", error);
+                        }
+                    } else {
+                        console.error("Error:", xhr.status);
+                    }
+                }
+            };
+            xhr.send();
+        }
+
+        function displaySearchResults(data) {
+            var tableContainer = document.getElementById('searchResults');
+            tableContainer.innerHTML = ''; // Clear previous results
+            if (data.length > 0) {
+                var table = document.createElement('table');
+                var thead = document.createElement('thead');
+                var tbody = document.createElement('tbody');
+
+                // Create table header
+                var headerRow = document.createElement('tr');
+                for (var key in data[0]) {
+                    var th = document.createElement('th');
+                    th.textContent = key;
+                    headerRow.appendChild(th);
+                }
+                thead.appendChild(headerRow);
+                table.appendChild(thead);
+
+                // Create table rows with data
+                data.forEach(function(rowData) {
+                    var tr = document.createElement('tr');
+                    for (var key in rowData) {
+                        var td = document.createElement('td');
+                        td.textContent = rowData[key];
+                        tr.appendChild(td);
+                    }
+                    tbody.appendChild(tr);
+                });
+                table.appendChild(tbody);
+
+                tableContainer.appendChild(table);
+            } else {
+                tableContainer.textContent = 'No results found.';
+            }
+        }
+
+        function createData() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost/fetch_data.php", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        console.log("Data created successfully.");
+                        // Optionally, you can update the UI after creation
+                    } else {
+                        console.error("Error creating data:", xhr.status);
+                    }
+                }
+            };
+            // Example: Serialize data before sending
+            // var serializedData = serializeData(data);
+            xhr.send("action=create&data=" + serializedData);
+        }
+
+        function deleteData() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost/fetch_data.php", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        console.log("Data deleted successfully.");
+                        // Optionally, you can update the UI after deletion
+                    } else {
+                        console.error("Error deleting data:", xhr.status);
+                    }
+                }
+            };
+            xhr.send("action=delete&id=" + id);
+        }
+
+        function editData(data) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "http://localhost/fetch_data.php", true);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        console.log("Data edited successfully.");
+                        // Optionally, you can update the UI after editing
+                    } else {
+                        console.error("Error editing data:", xhr.status);
+                    }
+                }
+            };
+
+            xhr.send("action=edit&data=" + serializedData);
+        }
+
+        function getSessionData() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "http://localhost/getSessionData.php", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        var sessionData = JSON.parse(xhr.responseText);
+                        console.log("Session Data:", sessionData);
+                    } else {
+                        console.error("Error fetching session data:", xhr.status);
+                    }
+                }
+            };
+            xhr.send();
+        }
+
+        function setCookie() {
+            var cookieName = "testCookie";
+            var cookieValue = "Hello, this is a test cookie!";
+            var expirationDate = new Date();
+            expirationDate.setTime(expirationDate.getTime() + (86400 * 30)); // 30 days
+
+            document.cookie = cookieName + "=" + cookieValue + ";expires=" + expirationDate.toUTCString() + ";path=/";
+            console.log("Cookie set successfully!");
+        }
+
+        // Function to view all cookies
+        function viewCookies() {
+            console.log("Cookies:", document.cookie);
+        }
+
+        // Call the functions to retrieve and display session and cookie data
+        getSessionData();
+        viewCookies();
+
+        // Call the fetchSearchResults function to display initial data
+        fetchSearchResults("");
+
+        // Function to fetch data
+        function fetchData() {
+            // Make an AJAX request to fetch_data.php
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", "http://localhost/fetch_data.php", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        // Parse the JSON response
+                        var data = JSON.parse(xhr.responseText);
+                        // Update the DOM to display the data
+                        displayData(data);
+                    } else {
+                        console.error("Error fetching data:", xhr.status);
+                    }
+                }
+            };
+            xhr.send();
+        }
+
+        // Function to display fetched data
+        function displayData(data) {
+            var container = document.getElementById("dataContainer");
+            container.innerHTML = "";
+            data.forEach(function(item) {
+                var div = document.createElement("div");
+                div.textContent = JSON.stringify(item); // Customize this to display the data as desired
+                container.appendChild(div);
+            });
+        }
+
+        // Call the fetchData function to initiate the process
+        fetchData();
+        // Modify the fetchSearchResults function to handle the response and display results in the console
+function fetchSearchResults(searchTerm) {
+    var url = "http://localhost/fetch_data.php?search=" + encodeURIComponent(searchTerm);
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", url, true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                // Parse the response as JSON
+                console.log("Raw Response:", xhr.responseText);
+                try {
+                    var responseData = JSON.parse(xhr.responseText);
+                    // Pass the data to the display function
+                    console.log("Data:", responseData);
+                    displaySearchResults(responseData);
+                } catch (error) {
+                    console.error("Error parsing JSON:", error);
+                }
+            } else {
+                console.error("Error:", xhr.status);
+            }
+        }
+    };
+    xhr.send();
+}
+
+    </script>
+</body>
+
+</html>
+

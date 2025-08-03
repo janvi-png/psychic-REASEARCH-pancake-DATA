@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <AUTHOR_DETAIL>
+        <Title>Optimization techniques for resource provisioning and load balancing in cloud
+            environment: a review</Title>
+        <year>2017</year>
+        <AUTHOR_1>Amanpreet Kaur</AUTHOR_1>
+        <AUTHOR_2>Dr. Bikrampal Kaur</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>er.amanpreet14@gmail.com</email_1>
+        <email_2>mca.bikrampal@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <clg_1>IKGPTU, Jalandhar</clg_1>
+        <clg_2>handigarh Engineering College, Landran (Mohali)</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Fusion in multimodal biometric system: A review</Title>
+        <year>2017</year>
+        <AUTHOR_1>G. KAUR</AUTHOR_1>
+        <AUTHOR_2>S . BHUSAN</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>gagan1492003@yahoo.com</email_1>
+        <email_2>shashibhushan6@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>I.K. Gujral Punjab Technical University, Kapurtala</clg_1>
+        <clg_2>Chandigarh Group of Colleges, Landran â€“ 140307, Punjab</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Challenges to Task and Workflow Scheduling in Cloud Environment</Title>
+        <year>2017</year>
+        <AUTHOR_1>Amanpreet Kaur</AUTHOR_1>
+        <AUTHOR_2>Dr. Bikrampal Kaur</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>er.amanpreet14@gmail.com</email_1>
+        <email_2>mca.bikrampal@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>IKGPTU, Jalandhar</clg_1>
+        <clg_2>handigarh Engineering College, Landran (Mohali)</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Detection of Motorcyclists without Helmet in Videos using Convolutional Neural
+            Network</Title>
+        <year>2017</year>
+        <AUTHOR_1>c. VISHNU</AUTHOR_1>
+        <AUTHOR_2>DINESH SINGH</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1 />
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>IIT HYDERABAD</clg_1>
+        <clg_2>IIT HYDERABAD</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Detection of motorcyclists without helmet in videos using convolutional neural
+            network</Title>
+        <year>2017</year>
+        <AUTHOR_1>c. VISHNU</AUTHOR_1>
+        <AUTHOR_2>DINESH SINGH</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1 />
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>IIT HYDERABAD</clg_1>
+        <clg_2>IIT HYDERABAD</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Scheduling and Load Balancing in Cloud Environment</Title>
+        <year>2017</year>
+        <AUTHOR_1>DK SHARMA</AUTHOR_1>
+        <AUTHOR_2>MANISH MAHAJAN</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>masterdeepak12@gmail.com</email_1>
+        <email_2>manishmahajan4u@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>IKG PTU</clg_1>
+        <clg_2>CGC CHD</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Step by Step Securing Cloud Environment</Title>
+        <year>2017</year>
+        <AUTHOR_1>RINI MAHAJAN</AUTHOR_1>
+        <AUTHOR_2>Dr. Dheerendra Singh</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1 />
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>Quest Group of institutions, Mohali, Punjab, India</clg_1>
+        <clg_2>CCET</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Analysis of Business Rules modeling Approaches using 4-Dimensional Business Rule
+            Framework</Title>
+        <year>2017</year>
+        <AUTHOR_1>DK SHARMA</AUTHOR_1>
+        <AUTHOR_2>MANISH MAHAJAN</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4>Naveen Praksh</AUTHOR_4>
+        <AUTHOR_5 />
+        <email_1>masterdeepak12@gmail.com</email_1>
+        <email_2>manishmahajan4u@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4>praknav@gmail.com</EMAIL_4>
+        <EMAIL_5 />
+        <clg_1>IKG PTU</clg_1>
+        <clg_2>CGC CHD</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Design and Implementation of a Software System for High Level Business Rules</Title>
+        <year>2017</year>
+        <AUTHOR_1>DK SHARMA</AUTHOR_1>
+        <AUTHOR_2>MANISH MAHAJAN</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4>Naveen Praksh</AUTHOR_4>
+        <AUTHOR_5 />
+        <email_1>masterdeepak12@gmail.com</email_1>
+        <email_2>manishmahajan4u@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4>praknav@gmail.com</EMAIL_4>
+        <EMAIL_5 />
+        <clg_1>IKG PTU</clg_1>
+        <clg_2>CGC CHD</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Experimental Evaluation of Quality of Service Parameters over VoIP Network</Title>
+        <year>2017</year>
+        <AUTHOR_1>Amit Chhabra</AUTHOR_1>
+        <AUTHOR_2>dr. AMIT VERMA</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>amitchh80@gmail.com,</email_1>
+        <email_2>dramitverma.cu@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>CCET</clg_1>
+        <clg_2>CEC,LANDRAN</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Analysis of Various Parameters which affect Voice Transmission in Wireless Mesh
+            Network</Title>
+        <year>2017</year>
+        <AUTHOR_1>Amit Chhabra</AUTHOR_1>
+        <AUTHOR_2>dr. AMIT VERMA</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>amitchh80@gmail.com,</email_1>
+        <email_2>dramitverma.cu@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>CCET</clg_1>
+        <clg_2>CEC,LANDRAN</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Particle Swarm Optimization based Dynamic Load Balancing in Cloud Environment</Title>
+        <year>2017</year>
+        <AUTHOR_1>Amanpreet Kaur</AUTHOR_1>
+        <AUTHOR_2>Dr. Bikrampal Kaur</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>er.amanpreet14@gmail.com</email_1>
+        <email_2>mca.bikrampal@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>IKGPTU, Jalandhar</clg_1>
+        <clg_2>handigarh Engineering College, Landran (Mohali)</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Comparative Analysis of Metaheuristics based Load Balancing Optimization in Cloud
+            Environment</Title>
+        <year>2017</year>
+        <AUTHOR_1>Amanpreet Kaur</AUTHOR_1>
+        <AUTHOR_2>Dr. Bikrampal Kaur</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>er.amanpreet14@gmail.com</email_1>
+        <email_2>mca.bikrampal@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>IKGPTU, Jalandhar</clg_1>
+        <clg_2>handigarh Engineering College, Landran (Mohali)</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>From Business Oriented Rules to SBVR</Title>
+        <year>2017</year>
+        <AUTHOR_1>GAURAV RAJ</AUTHOR_1>
+        <AUTHOR_2>TRIVENI MISHRA</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>er.gaurav.raj@gmail.com</email_1>
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1 />
+        <clg_2>Punjab Technical University, Kapurthala, Chandigarh, India</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>QoWS Analysis for Web Service Selection Using WS Monitoring Tool</Title>
+        <year>2017</year>
+        <AUTHOR_1>GAURAV RAJ</AUTHOR_1>
+        <AUTHOR_2>TRIVENI MISHRA</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>er.gaurav.raj@gmail.com</email_1>
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1 />
+        <clg_2>Punjab Technical University, Kapurthala, Chandigarh, India</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Penetration Testing as a Test Phase
+            in Web Service Testing a Black Box Pen
+            Testing Approach</Title>
+        <year>2017</year>
+        <AUTHOR_1>SHIVAM MEHTA</AUTHOR_1>
+        <AUTHOR_2>G. RAJ</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1 />
+        <email_2>er.gaurav.raj@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1 />
+        <clg_2>Punjab Technical University, Kapurthala, Chandigarh, India</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Secure Speaker Biometric System using GFCC
+            with Additive White Gaussian Noise and Wavelet
+            Filter</Title>
+        <year>2017</year>
+        <AUTHOR_1>G. KAUR</AUTHOR_1>
+        <AUTHOR_2>S . BHUSAN</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>gagan1492003@yahoo.com</email_1>
+        <email_2>shashibhushan6@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>I.K. Gujral Punjab Technical University, Kapurtala</clg_1>
+        <clg_2>Chandigarh Group of Colleges, Landran â€“ 140307, Punjab</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Enchancing Multi-biometric System Security at Feature level Fusion</Title>
+        <year>2017</year>
+        <AUTHOR_1>G.Raj</AUTHOR_1>
+        <AUTHOR_2>M,Mahajan</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>er.gaurav.raj@gmail.com</email_1>
+        <email_2>manishmahajan4u@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>Sharda University</clg_1>
+        <clg_2>CGC CHD</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>V&amp;V analysis of composite web service using WS simulator for trust management in
+            WS lifespan</Title>
+        <year>2018</year>
+        <AUTHOR_1>G.Raj</AUTHOR_1>
+        <AUTHOR_2>M,Mahajan</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>er.gaurav.raj@gmail.com</email_1>
+        <email_2>manishmahajan4u@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>Sharda University</clg_1>
+        <clg_2>CGC CHD</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Trust management in web sevices for predicition and selection based on trust
+            evaluation model</Title>
+        <year>2018</year>
+        <AUTHOR_1 />
+        <AUTHOR_2 />
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1 />
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1 />
+        <clg_2 />
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Effective multimodal biometric system using feature level fusion of tongue, speech
+            and signature vector</Title>
+        <year>2018</year>
+        <AUTHOR_1 />
+        <AUTHOR_2 />
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1 />
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1 />
+        <clg_2 />
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Comparative Analysis of hidden web crawler</Title>
+        <year>2018</year>
+        <AUTHOR_1>Ashok Kumar</AUTHOR_1>
+        <AUTHOR_2>Manish Mahajan</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1 />
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1 />
+        <clg_2 />
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>A comparative analysis of trust model in cloud computing</Title>
+        <year>2018</year>
+        <AUTHOR_1>U.Kaur</AUTHOR_1>
+        <AUTHOR_2>M. Mahajan</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1 />
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>I.K. Gujral Punjab Technical University, Jalandhar, Punjab, India</clg_1>
+        <clg_2>Department of Computer Science &amp; Engineering, CGC, Landran, Punjab,India</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Analysis of signaling protocol and packet aggregation techniques in VOIP network</Title>
+        <year>2018</year>
+        <AUTHOR_1>Amit Chhabra</AUTHOR_1>
+        <AUTHOR_2>, Dr. Amit Verma</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1 />
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>IKGPTU, Jalandhar</clg_1>
+        <clg_2>Professor, Chandigarh Engineering College, Landran, Punjab, India</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Prefetching of hidden web data using association rule</Title>
+        <year>2018</year>
+        <AUTHOR_1 />
+        <AUTHOR_2 />
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1 />
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1 />
+        <clg_2 />
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Meta-heuristics based load balancing optimization in cloud environment on underflow
+            and overflow condition</Title>
+        <year>2018</year>
+        <AUTHOR_1>Amanpreet Kaur</AUTHOR_1>
+        <AUTHOR_2>Bikrampal Kaur</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>er.amanpreet14@gmail.com</email_1>
+        <email_2>mca.bikrampal@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>IKGPTU, Jalandhar</clg_1>
+        <clg_2>handigarh Engineering College, Landran (Mohali)</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Comparative analysis of metaheuristics based Load Balancing Optimization in Cloud
+            Environment</Title>
+        <year>2018</year>
+        <AUTHOR_1>Amanpreet Kaur</AUTHOR_1>
+        <AUTHOR_2>Dr. Bikrampal Kaur</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>er.amanpreet14@gmail.com</email_1>
+        <email_2>mca.bikrampal@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>IKGPTU, Jalandhar</clg_1>
+        <clg_2>handigarh Engineering College, Landran (Mohali)</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Meta-heuristics based framework for workflow load balancing in cloud</Title>
+        <year>2018</year>
+        <AUTHOR_1>Amanpreet Kaur</AUTHOR_1>
+        <AUTHOR_2>Dr. Bikrampal Kaur</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>er.amanpreet14@gmail.com</email_1>
+        <email_2>mca.bikrampal@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>IKGPTU, Jalandhar</clg_1>
+        <clg_2>handigarh Engineering College, Landran (Mohali)</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>A novel access control in cloud computing environment</Title>
+        <year>2018</year>
+        <AUTHOR_1>Rini Mahajan</AUTHOR_1>
+        <AUTHOR_2>Manish Mahajan</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>rinimahajan@gmail.com</email_1>
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>Ph.D. Research Scholar I. K. Gujral PTU Jalandhar, Punjab 2 Professor, Department of
+            Computer Science &amp; Engineering, Chandigarh Engineering College</clg_1>
+        <clg_2>Professor, Department of Computer Science &amp; Engineering, Chandigarh Engineering
+            College, Landan, Mohali, Punjab</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Trusted web services using prediction performance accuracy of turst decision factor
+            in QWS datset</Title>
+        <year>2018</year>
+        <AUTHOR_1>Rini Mahajan</AUTHOR_1>
+        <AUTHOR_2>Manish Mahajan</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>rinimahajan@gmail.com</email_1>
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>Ph.D. Research Scholar I. K. Gujral PTU Jalandhar, Punjab 2 Professor, Department of
+            Computer Science &amp; Engineering, Chandigarh Engineering College</clg_1>
+        <clg_2>Professor, Department of Computer Science &amp; Engineering, Chandigarh Engineering
+            College, Landan, Mohali, Punjab</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>movement from business rule to system development</Title>
+        <year>2018</year>
+        <AUTHOR_1 />
+        <AUTHOR_2 />
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1 />
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1 />
+        <clg_2 />
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>A quality feed trust model for data transaction at cloud</Title>
+        <year>2018</year>
+        <AUTHOR_1>Amanpreet Kaur</AUTHOR_1>
+        <AUTHOR_2>Bikrampal Kaur</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>er.amanpreet14@gmail.com</email_1>
+        <email_2>mca.bikrampal@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>IKGPTU, Jalandhar</clg_1>
+        <clg_2>handigarh Engineering College, Landran (Mohali)</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Quality feed enhanced trust model in cloud computing</Title>
+        <year>2018</year>
+        <AUTHOR_1>Amanpreet Kaur</AUTHOR_1>
+        <AUTHOR_2>Bikrampal Kaur</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>er.amanpreet14@gmail.com</email_1>
+        <email_2>mca.bikrampal@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>IKGPTU, Jalandhar</clg_1>
+        <clg_2>handigarh Engineering College, Landran (Mohali)</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Understanding the trust cloud computing</Title>
+        <year>2018</year>
+        <AUTHOR_1 />
+        <AUTHOR_2 />
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1 />
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1 />
+        <clg_2 />
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Window azure active directory services for maintaining seciruty and access control</Title>
+        <year>2018</year>
+        <AUTHOR_1 />
+        <AUTHOR_2 />
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1 />
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1 />
+        <clg_2 />
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Meta-heuristic based framework for workflow load balancing in cloud environment</Title>
+        <year>2019</year>
+        <AUTHOR_1>Amanpreet Kaur</AUTHOR_1>
+        <AUTHOR_2>Bikrampal Kaur</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>er.amanpreet14@gmail.com</email_1>
+        <email_2>mca.bikrampal@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>IKGPTU, Jalandhar</clg_1>
+        <clg_2>handigarh Engineering College, Landran (Mohali)</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>
+            Imputing Missing Data Analysis in Web Service Quality Dataset for Improving QoS
+            Prediction</Title>
+        <year>2019</year>
+        <AUTHOR_1>Gaurav Raj</AUTHOR_1>
+        <AUTHOR_2>M.Mahajan</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>sharda.ac.in</email_1>
+        <email_2>manishmahajan4u@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>Sharda University</clg_1>
+        <clg_2>CGC CHD</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Elaborate Business Dimension of Business Oriented Business Rule Framework</Title>
+        <year>2019</year>
+        <AUTHOR_1>Deepak Kumar Sharma</AUTHOR_1>
+        <AUTHOR_2>Manish Mahajan</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4>Naveen Prakash</AUTHOR_4>
+        <AUTHOR_5 />
+        <email_1>igdtuw.ac.in</email_1>
+        <email_2>manishmahajan4u@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>Associate Professor, Dept. of Information Tech, Indira Gandhi Delhi Technical
+            University for Women</clg_1>
+        <clg_2 />
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Edge computing and deep learning enabled secure multitier network for internet of
+            vehicles</Title>
+        <year>2020</year>
+        <AUTHOR_1>HARSH GROVER</AUTHOR_1>
+        <AUTHOR_2>TEJASWI ALLADI</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4>VINAY CHAMOLI</AUTHOR_4>
+        <AUTHOR_5>KIM-KWANG RAYMOND CHOO</AUTHOR_5>
+        <email_1 />
+        <email_2 />
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>BITS PILANI</clg_1>
+        <clg_2>CARLETON UNIVERSITY,OTTAWA</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Trust decision model and trust evaluation model for quality web service
+            identification in web service lifecycle using QSW data analysis</Title>
+        <year>2020</year>
+        <AUTHOR_1>GAURAV RAJ</AUTHOR_1>
+        <AUTHOR_2>MANISH MAHAJAN</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>er.gaurav.raj@gmail.com</email_1>
+        <email_2>manishmahajan4u@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>Punjab Technical University, Kapurthala, Chandigarh, India</clg_1>
+        <clg_2 />
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Intrusion detection system in cloud environment: Literature survey &amp; future
+            research directions</Title>
+        <year>2021</year>
+        <AUTHOR_1>SUMAN LATA</AUTHOR_1>
+        <AUTHOR_2>Dr. Dheerendra Singh</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>suman_cse@ccet.ac.in</email_1>
+        <email_2>professordsingh@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>CCET</clg_1>
+        <clg_2>CCET</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>A Hybrid Approach for Cloud Load Balancing</Title>
+        <year>2021</year>
+        <AUTHOR_1>SUMAN LATA</AUTHOR_1>
+        <AUTHOR_2>Dr. Dheerendra Singh</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>suman_cse@ccet.ac.in</email_1>
+        <email_2>professordsingh@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>CCET</clg_1>
+        <clg_2>CCET</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Intrusion detection system in cloud environment: Literature survey &amp; future
+            research directions</Title>
+        <year>2021</year>
+        <AUTHOR_1>SUMAN LATA</AUTHOR_1>
+        <AUTHOR_2>Dr. Dheerendra Singh</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>suman_cse@ccet.ac.in</email_1>
+        <email_2>professordsingh@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>CCET</clg_1>
+        <clg_2>CCET</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Optimizing Packets of Software Defined Network Using Hybrid Optimization Techniques</Title>
+        <year>2021</year>
+        <AUTHOR_1>JAGMEET KAUR</AUTHOR_1>
+        <AUTHOR_2>Dr. Dheerendra Singh</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1 />
+        <email_2>professordsingh@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>CHANDIGARH UNIVERSITY</clg_1>
+        <clg_2>CCET</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>Cloud simulation tools: A survey</Title>
+        <year>2022</year>
+        <AUTHOR_1>SUMAN LATA</AUTHOR_1>
+        <AUTHOR_2>Dr. Dheerendra Singh</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4 />
+        <AUTHOR_5 />
+        <email_1>suman_cse@ccet.ac.in</email_1>
+        <email_2>professordsingh@gmail.com</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4 />
+        <EMAIL_5 />
+        <clg_1>CCET</clg_1>
+        <clg_2>CCET</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+    <AUTHOR_DETAIL>
+        <Title>VISION: A COMPUTER VISION BASED SECURE ASSIGNMENT FRAMEWORK</Title>
+        <year>2023</year>
+        <AUTHOR_1>ANMOL CHANDEL</AUTHOR_1>
+        <AUTHOR_2>INDERPREET SINGH</AUTHOR_2>
+        <AUTHOR_3>Dr. Dheerendra Singh</AUTHOR_3>
+        <AUTHOR_4>GAURAV RAJ</AUTHOR_4>
+        <AUTHOR_5>ANKITA CHANDEL</AUTHOR_5>
+        <email_1>anmolchandel2001@gmail.com</email_1>
+        <email_2>
+            inderpreet221099@gmail.com
+</email_2>
+        <email_3>professordsingh@gmail.com</email_3>
+        <EMAIL_4>er.gaurav.raj@gmail.com</EMAIL_4>
+        <EMAIL_5>ankitachandel97@gmail.com</EMAIL_5>
+        <clg_1>Chandigarh College of Engineering and Technology, Panjab University, Chandigarh</clg_1>
+        <clg_2>Chandigarh College of Engineering and Technology, Panjab University, Chandigarh</clg_2>
+        <clg_3>CCET</clg_3>
+    </AUTHOR_DETAIL>
+</root>
