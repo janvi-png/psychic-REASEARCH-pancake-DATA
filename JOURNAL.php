@@ -32,7 +32,8 @@ $author5 = $_POST['author5'];
 $impactFactor = $_POST['impactFactor'];
 
 // Prepare SQL statement to insert data into 'journal' table
-$stmt = $conn->prepare("INSERT INTO journal (ISSN_NO, Title, TYPE, journal_name, Index, AUTHOR_1, AUTHOR_2, AUTHOR_3, AUTHOR_4, AUTHOR_5, impact_factor, year) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+// Prepare SQL statement to insert data into 'journal' table
+$stmt = $conn->prepare("INSERT INTO journal (ISSN_NO, Title, TYPE, journal_name, `Index`, AUTHOR_1, AUTHOR_2, AUTHOR_3, AUTHOR_4, AUTHOR_5, impact_factor, year) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 $stmt->bind_param("ssssssssssss", $issn, $title, $type, $journalName, $index, $authors, $author2, $author3, $author4, $author5, $impactFactor, $year);
 
 // Execute SQL statement
@@ -62,6 +63,7 @@ if ($result->num_rows > 0) {
     // No data found
     echo json_encode(array("message" => "No data found."));
 }
+
 // Close statement and connection
 $stmt->close();
 $conn->close();

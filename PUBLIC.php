@@ -2,21 +2,17 @@
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST");
 header("Access-Control-Allow-Headers: Content-Type");
-
 // Database connection parameters
 $hostname = "localhost";
 $username = "JJ";
 $password = "";
 $database = "r&p";
-
 // Connect to the database
 $conn = new mysqli($hostname, $username, $password, $database);
-
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
 // Retrieve form data
 $title = $_POST['title'];
 $type = $_POST['type'];
@@ -43,7 +39,6 @@ $stmt->bind_param("ssssssssssssssss", $title, $type, $publisher, $year, $issn, $
 if ($stmt->execute()) {
     // Success: Respond with success message
     echo "Publication details saved successfully.";
-
 } else {
     // Error: Respond with error message
     echo "Error: " . $conn->error;
@@ -70,7 +65,6 @@ if ($result->num_rows > 0) {
     // No data found
     echo "No data found.";
 }
-
 
 // Close statement and connection
 $stmt->close();

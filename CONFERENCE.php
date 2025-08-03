@@ -27,6 +27,7 @@ $placeOfConference = $_POST['placeOfConference'];
 $doc = $_POST['doc'];
 $doi = $_POST['doi'];
 $dop = $_POST['dop'];
+$ISBN_NO= $_POST['ISBN_NO'];
 $author1 = $_POST['author1'];
 $author2 = $_POST['author2'];
 $author3 = $_POST['author3'];
@@ -35,8 +36,8 @@ $author4 = $_POST['author4'];
 $author5 = $_POST['author5']; 
 
 // Prepare SQL statement to insert data into 'conference' table
-$stmt = $conn->prepare("INSERT INTO conference (Title, TYPE, conference_name, year, ISSN_NO, PLACE_OF_CONFERENCE, DOC, DOI, ISBN_NO, DOP, AUTHOR_1, AUTHOR_2, AUTHOR_3,NatureofIndex, AUTHOR_4, AUTHOR_5) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-$stmt->bind_param("sssiisssssssssss", $title, $type, $conferenceName, $year,$ISSN_NO,$placeOfConference, $doc, $doi, $dop, $author1, $author2, $author3, $natureOfIndex, $author4, $author5);
+$stmt = $conn->prepare("INSERT INTO conference (Title, TYPE, conference_name, year, ISSN_NO, PLACE_OF_CONFERENCE, DOC, DOI, ISBN_NO, DOP, AUTHOR_1, AUTHOR_2, AUTHOR_3,NatureofIndex, AUTHOR_4, AUTHOR_5) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?)");
+$stmt->bind_param("sssiisssssssssss", $title, $type, $conferenceName, $year,$ISSN_NO,$placeOfConference, $doc, $doi, $dop,$ISBN_NO, $author1, $author2, $author3, $natureOfIndex, $author4, $author5);
 
 // Execute SQL statement
 if ($stmt->execute()) {
@@ -45,7 +46,6 @@ if ($stmt->execute()) {
 } else {
     // Error: Respond with error message
     echo "Error: " . $conn->error;
-
 }
 // Check if the request method is GET
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
@@ -72,6 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         echo "No data found.";
     }
 }
+
 
 // Close statement and connection
 $stmt->close();

@@ -46,6 +46,14 @@ if ($stmt->execute()) {
     // Error: Respond with error message
     echo "Error: " . $conn->error;
 }
+// Execute SQL statement
+if ($stmt->execute()) {
+    // Success: Respond with success message
+    echo "Author details saved successfully.";
+} else {
+    // Error: Respond with error message
+    echo "Error: " . $conn->error;
+}
 // Check if the request method is GET
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     // Fetch data from the database
@@ -67,6 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     echo json_encode(array("error" => "Invalid request method"));
 }
 
+// Close statement and connection
 $stmt->close();
 $conn->close();
 ?>
